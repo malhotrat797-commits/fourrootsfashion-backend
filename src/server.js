@@ -20,3 +20,5 @@ mongoose
     });
   })
   .catch(err => console.error(err));
+const authRoutes = require("./routes/auth");
+app.use("/api/auth", authRoutes);
